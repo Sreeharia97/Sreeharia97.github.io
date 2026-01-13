@@ -1,9 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <h1>Hello everyone! Welcome to my portfolio.</h1>
+<body class="bg-slate-50 flex items-center justify-center min-h-screen">
+
+    <div class="max-w-md w-full bg-white shadow-2xl rounded-3xl p-8 text-center border border-gray-100">
+        <img src="profile.jpg" alt="Profile Picture" 
+             class="w-32 h-32 rounded-full mx-auto mb-4 object-cover border-4 border-blue-500 shadow-lg">
+
+        <h1 class="text-3xl font-bold text-gray-800">Your Name</h1>
+        <p class="text-blue-600 font-medium mb-4">Software Developer & Designer</p>
+        <p class="text-gray-500 text-sm mb-8">
+            Passionate about building clean user interfaces and solving complex problems. 
+            Welcome to my personal space!
+        </p>
+
+        <div class="flex flex-col gap-3">
+            <a href="https://linkedin.com/in/YOUR_USERNAME" target="_blank" 
+               class="bg-[#0077b5] text-white py-3 px-6 rounded-xl font-semibold hover:bg-opacity-90 transition shadow-md">
+               Connect on LinkedIn
+            </a>
+
+            <a href="resume.pdf" download 
+               class="bg-gray-800 text-white py-3 px-6 rounded-xl font-semibold hover:bg-gray-700 transition shadow-md">
+               Download Resume ↓
+            </a>
+        </div>
+
+        <footer class="mt-8 text-gray-400 text-xs tracking-widest uppercase">
+            Built with GitHub Pages
+        </footer>
+    </div>
+
 </body>
 </html>
